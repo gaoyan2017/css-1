@@ -1,0 +1,162 @@
+html 复习 
+
+---------------------------------
+
+1. html 是什么？
+超文本标记语言。
+
+网页： html  css JavaScript 
+
+html 网页框架
+
+
+2.html主体结构 
+<!doctype html>  告诉浏览器，当前文档是html5文档
+<html><body><head> 网页主体 
+<head> 网页的预设信息
+<meta name='keywords' content=''>
+<title> 网页的标题
+<body>  网页的主体信息
+
+3.基础标签
+<h1> - <h6> 文章标题 
+<p> 段落
+<hr> 换行分割线
+<br> 换行
+<!-- --> 注释
+
+4.常用标签
+em 强调
+strong 强调级别更高 字体加粗
+abbr 缩写 和title属性配合
+address 地址
+blockquote 块级引用
+cite 一句话的引用
+ins 被插入的文本
+del 被删除的文本
+
+b 加粗
+i 斜体
+big 大号字体
+small 小号字体
+sup sub 下标和上标
+bdo 文本显示方向  dir  属性  ltr rtl 
+
+pre 原样输出 
+code 代码 
+kbd 键盘文本
+var 变量 
+
+5. 功能标签
+
+a标签  
+	超链接  
+		输入网址： href  = 'http://www.baidu.com' 域名必须输入完整
+	锚点
+		可以实现当前网页任意位置跳转
+			a href = '#id'  
+			在任意位置的标签上面添加id  p id=
+		可以实现本地其他文件跳转
+			a href = 13.html#test  首先跳转到13.html，然后在13.html中找到id值为 test 的标签位置并且跳转
+
+		如果跳转目标为a标签，可以使用a标签的name属性
+
+		还可以跳转到外部的网页的指定位置
+
+6. 列表
+	无序列表
+		ul li 
+	有序列表 
+		ol li 
+7.iframe 页面嵌套 
+	
+8.项目列表描述 
+	dl dt dd
+		dl 主标签 
+			dt  项目 
+			dd 描述 
+			一个dt可以配置多个dd
+9.图像
+	img  src alt 图片加载失败的时候添加的描述 项目中必须要写 
+	width height 宽度和高度 
+	usemap ismap 
+
+	图像映射：
+		map 标签  定义映射地图  id name 这两个值必须和usemap的值相同 
+		area 标签  shape 形状 circle rect poly 
+								coords 坐标
+	img标签放在a标签中
+	<a href ='http://www.baidu.com'>img
+
+10.表格 
+	table 标签
+	tr  
+	td 
+	th 
+	caption 整个表格的标题
+
+11. 页面基础链接 
+	base 链接会影响当前的整个网页 ，只要你网网页里面的地址没有写协议都会被base影响
+	a href = www.sina.com 
+
+12. form表单 
+	用来提交数据
+	input 
+		type 类型：
+			text 文本
+			password 密码
+			file 文件
+			hidden 隐藏
+			button 按钮
+			submit 提交
+			radio 单选 
+			checkbox 多选  无论是单选还是多选，一个类型的选项name值必须相同
+			image 图片
+			reset 重置
+	属性：
+		alt 图片替换文字
+		src 引入图片的路径
+		checked 默认选项
+		disabled 禁用
+		readoly 只读
+		maxlength 最大范围
+		name 
+		value  默认值 
+		required 必填 输入框内容不能为空
+
+	textarea 文本输入域
+		cols 规定可见列数
+		rows 规定可见行数
+		disabled 禁用
+		readoly 只读
+		name 
+
+	button 按钮
+		type
+			button 按钮
+			submit 提交
+			reset 重置
+		disabled 禁用属性
+		name属性
+		value 默认值
+
+	select 下拉菜单 
+		disabled 禁用
+		multipe 多选 按住ctrl 可以同时选择多个选项
+		name
+		size  同时显示多个选项  
+	optgroup 给选项分组 
+		label 属性 设置组的标题
+		disabled 禁用 只禁用一个选项组
+	option 
+		下拉列表的选项
+		value 用来和后台传输数据
+		disabled 禁用
+
+	label 标签
+		有两种用法：
+			第一种label标签的for属性必须和input id值相同
+			第二种，把input放在label标签内部
+	fieldset 标签 
+		给form表单分组 
+		legend 设置标题
